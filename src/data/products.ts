@@ -36,7 +36,7 @@ export const products: Product[] = [
       'Safe for all surfaces (tiles, ceramic, marble)'
     ],
     sizes: [{ label: '5 Litre', mrp: 1200 }],
-    image: '/products/bathroom-cleaner.jpeg',
+    image: '/products/image-4.webp',
     badges: ['Germ Protection', 'Powerful Cleaning'],
   },
   {
@@ -52,7 +52,7 @@ export const products: Product[] = [
       'Safe for Indian & Western toilets'
     ],
     sizes: [{ label: '5 Litre', mrp: 899 }],
-    image: '/products/toilet-bowl-cleaner.jpeg',
+    image: '/products/image-7.webp',
     warning: 'Corrosive',
     badges: ['Germ Protection', 'Powerful Cleaning'],
   },
@@ -73,7 +73,7 @@ export const products: Product[] = [
       { label: '500ml', mrp: null },
       { label: '1000ml', mrp: null }
     ],
-    image: '/products/power-plus-10x.jpeg',
+    image: '/products/image-15.webp',
     badges: ['Germ Protection', 'Fresh Fragrance'],
   },
   {
@@ -89,7 +89,7 @@ export const products: Product[] = [
       'Fresh fragrance'
     ],
     sizes: [{ label: '5 Litre', mrp: 499 }],
-    image: '/products/glass-cleaner.jpeg',
+    image: '/products/image-8.webp',
     badges: ['Powerful Cleaning'],
   },
   {
@@ -105,7 +105,7 @@ export const products: Product[] = [
       'Works on multiple surfaces'
     ],
     sizes: [{ label: '500ml', mrp: 100 }],
-    image: '/products/mirror-shine-glass.jpeg',
+    image: '/products/image-11.webp',
     badges: ['Safe on Hands & Surfaces'],
   },
   {
@@ -125,7 +125,7 @@ export const products: Product[] = [
       { name: 'Rose', colorHex: '#F4C2C2' },
       { name: 'Lime', colorHex: '#BFFF00' }
     ],
-    image: '/products/ultra-shine-floor.jpeg',
+    image: '/products/image-12.webp',
     badges: ['Germ Protection', 'Fresh Fragrance'],
   },
   {
@@ -144,7 +144,7 @@ export const products: Product[] = [
     variants: [
       { name: 'Lime', colorHex: '#BFFF00' }
     ],
-    image: '/products/dish-wash.jpeg',
+    image: '/products/image-13.webp',
     badges: ['Safe on Hands & Surfaces', 'Powerful Cleaning'],
   },
   {
@@ -165,7 +165,7 @@ export const products: Product[] = [
       { name: 'Jasmine', colorHex: '#FFFDD0' },
       { name: 'Morning Breeze', colorHex: '#87CEEB' }
     ],
-    image: '/products/air-freshener.jpeg',
+    image: '/products/image-5.webp',
     badges: ['Fresh Fragrance'],
   },
   {
@@ -187,7 +187,7 @@ export const products: Product[] = [
       { name: 'Lavender', colorHex: '#E6E6FA' },
       { name: 'Aqua Sky', colorHex: '#00FFFF' }
     ],
-    image: '/products/gentle-hand-cleanser.jpeg',
+    image: '/products/image-9.webp',
     badges: ['Safe on Hands & Surfaces', 'Germ Protection'],
   },
   {
@@ -209,7 +209,7 @@ export const products: Product[] = [
       { name: 'Aqua', colorHex: '#00FFFF' },
       { name: 'Lavender', colorHex: '#E6E6FA' }
     ],
-    image: '/products/foaming-handwash.jpeg',
+    image: '/products/image-16.webp',
     badges: ['Germ Protection', 'Safe on Hands & Surfaces'],
   },
   {
@@ -234,7 +234,7 @@ export const products: Product[] = [
       { name: 'Rose Pink', colorHex: '#F4C2C2' },
       { name: 'Green Lemon', colorHex: '#BFFF00' }
     ],
-    image: '/products/white-phenyl.jpeg',
+    image: '/products/image-14.webp',
     badges: ['Germ Protection', 'Powerful Cleaning'],
   }
 ];

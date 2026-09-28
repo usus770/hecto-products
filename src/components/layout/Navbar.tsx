@@ -3,7 +3,8 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ShoppingCart, Menu, X, Phone } from "lucide-react";
+import { ShoppingCart, Menu, X, Phone, Moon, Sun } from "lucide-react";
+import { useTheme } from "next-themes";
 import { useCartStore } from "@/store/cart";
 import { siteConfig } from "@/config/site";
 import { motion, AnimatePresence } from "framer-motion";
@@ -19,6 +20,7 @@ const navLinks = [
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { theme, setTheme } = useTheme();
   const pathname = usePathname();
   
   // Hydration safe cart count
@@ -50,7 +52,7 @@ export default function Navbar() {
         className={clsx(
           "fixed top-0 inset-x-0 z-50 transition-all duration-300",
           isScrolled
-            ? "bg-white/80 backdrop-blur-md shadow-sm border-b border-gray-100 py-3"
+            ? "bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm border-b border-gray-100 dark:border-slate-800 py-3"
             : "bg-transparent py-5"
         )}
       >
@@ -71,7 +73,7 @@ export default function Navbar() {
                   href={link.href}
                   className={clsx(
                     "text-sm font-medium transition-colors hover:text-[#1E8E3E]",
-                    pathname === link.href ? "text-[#1E8E3E]" : "text-gray-600"
+                    pathname === link.href ? "text-[#1E8E3E]" : "text-gray-600 dark:text-gray-300"
                   )}
                 >
                   {link.name}
@@ -99,6 +101,14 @@ export default function Navbar() {
                 )}
               </Link>
               
+              <button
+                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                className="p-2 text-gray-700 dark:text-gray-300 hover:text-[#0B2A6F] dark:hover:text-blue-400 transition-colors"
+                aria-label="Toggle dark mode"
+              >
+                {mounted && theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+              </button>
+              
               <a
                 href={siteConfig.links.whatsapp}
                 target="_blank"
@@ -110,7 +120,7 @@ export default function Navbar() {
               </a>
 
               <button
-                className="md:hidden p-2 text-gray-700"
+                className="md:hidden p-2 text-gray-700 dark:text-gray-300"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 aria-label="Toggle menu"
               >
@@ -128,7 +138,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 z-40 bg-white pt-24 pb-6 px-4 flex flex-col h-screen md:hidden"
+            className="fixed inset-0 z-40 bg-white dark:bg-slate-900 pt-24 pb-6 px-4 flex flex-col h-screen md:hidden"
           >
             <nav className="flex flex-col gap-6 text-center mt-8">
               {navLinks.map((link) => (
@@ -138,7 +148,7 @@ export default function Navbar() {
                   onClick={() => setMobileMenuOpen(false)}
                   className={clsx(
                     "text-2xl font-bold tracking-tight",
-                    pathname === link.href ? "text-[#1E8E3E]" : "text-gray-900"
+                    pathname === link.href ? "text-[#1E8E3E]" : "text-gray-900 dark:text-white"
                   )}
                 >
                   {link.name}
