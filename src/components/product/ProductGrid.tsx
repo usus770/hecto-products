@@ -61,19 +61,19 @@ export default function ProductGrid({ products }: { products: Product[] }) {
                 {product.category}
               </span>
               {product.badges?.slice(0, 1).map(badge => (
-                <span key={badge} className="text-[10px] font-bold text-[#0B2A6F] uppercase tracking-wider bg-[#0B2A6F]/10 px-2 py-0.5 rounded">
+                <span key={badge} className="text-[10px] font-bold text-[#0B2A6F] dark:text-blue-300 uppercase tracking-wider bg-[#0B2A6F]/10 dark:bg-blue-400/20 px-2 py-0.5 rounded">
                   {badge}
                 </span>
               ))}
             </div>
             
-            <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-1 group-hover:text-[#0B2A6F] transition-colors">{product.name}</h3>
+            <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-1 group-hover:text-[#0B2A6F] dark:hover:text-blue-300 dark:text-blue-300 transition-colors">{product.name}</h3>
             <p className="text-gray-500 dark:text-gray-400 text-sm mb-4 flex-1 line-clamp-2">{product.shortDescription}</p>
             
             <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-50 dark:border-slate-800">
               <div className="flex flex-col">
                 <span className="text-xs text-gray-500 dark:text-gray-400 mb-0.5">{product.sizes[0]?.label}</span>
-                <span className="font-black text-lg text-[#0B2A6F]">
+                <span className="font-black text-lg text-[#0B2A6F] dark:text-blue-300">
                   {product.sizes[0]?.mrp ? `₹${product.sizes[0].mrp}` : 'On request'}
                 </span>
               </div>

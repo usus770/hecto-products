@@ -139,7 +139,7 @@ export default function CartClient() {
                 )}
               </div>
               
-              <div className="text-xl font-black text-[#0B2A6F]">
+              <div className="text-xl font-black text-[#0B2A6F] dark:text-blue-300">
                 {item.size.mrp ? `₹${item.size.mrp * item.quantity}` : 'Price on request'}
               </div>
             </div>
@@ -174,7 +174,7 @@ export default function CartClient() {
         ))}
         
         <div className="flex justify-between items-center px-2 py-4">
-          <Link href="/products" className="text-[#0B2A6F] font-bold hover:underline">
+          <Link href="/products" className="text-[#0B2A6F] dark:text-blue-300 font-bold hover:underline">
             &larr; Continue Shopping
           </Link>
           <button onClick={clearCart} className="text-gray-500 dark:text-gray-400 text-sm hover:text-red-500 transition-colors">
@@ -185,7 +185,7 @@ export default function CartClient() {
       
       {/* Checkout Form */}
       <div className="bg-white dark:bg-slate-900 rounded-3xl p-6 md:p-8 shadow-lg border border-gray-100 dark:border-slate-700 lg:sticky lg:top-28">
-        <h2 className="text-xl font-black text-[#0B2A6F] mb-6">Order Summary</h2>
+        <h2 className="text-xl font-black text-[#0B2A6F] dark:text-blue-300 mb-6">Order Summary</h2>
         
         <div className="space-y-3 mb-6 pb-6 border-b border-gray-100 dark:border-slate-700">
           <div className="flex justify-between text-gray-600 dark:text-gray-300">

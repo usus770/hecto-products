@@ -39,7 +39,7 @@ export default function HomePage() {
                 <span>Professional Cleaning Solutions</span>
               </div>
               
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-[#0B2A6F] leading-tight tracking-tight">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-[#0B2A6F] dark:text-blue-300 leading-tight tracking-tight">
                 Cleaner Spaces.<br />
                 <span className="text-[#1E8E3E]">Healthier Lives.</span>
               </h1>
@@ -74,7 +74,7 @@ export default function HomePage() {
                 <div className="absolute inset-4 bg-white dark:bg-slate-900 shadow-2xl rounded-3xl flex items-center justify-center p-8 border border-white/50 glass-blur">
                   <div className="text-center space-y-4">
                     <span className="text-8xl">✨</span>
-                    <h3 className="text-2xl font-bold text-[#0B2A6F]">HECTO Core Line</h3>
+                    <h3 className="text-2xl font-bold text-[#0B2A6F] dark:text-blue-300">HECTO Core Line</h3>
                     <p className="text-gray-500 dark:text-gray-400 font-medium">Discover our premium range</p>
                   </div>
                 </div>
@@ -105,7 +105,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex justify-between items-end mb-12">
             <div>
-              <h2 className="text-3xl md:text-4xl font-black text-[#0B2A6F] mb-4">Featured Products</h2>
+              <h2 className="text-3xl md:text-4xl font-black text-[#0B2A6F] dark:text-blue-300 mb-4">Featured Products</h2>
               <p className="text-gray-600 dark:text-gray-300 text-lg">Our most trusted cleaning solutions.</p>
             </div>
             <Link href="/products" className="hidden md:flex items-center gap-2 text-[#1E8E3E] font-bold hover:gap-3 transition-all">
@@ -128,7 +128,7 @@ export default function HomePage() {
                 </div>
                 <div className="p-6 flex-1 flex flex-col">
                   <div className="text-xs font-bold text-[#1E8E3E] uppercase tracking-wider mb-2">{product.category}</div>
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-[#0B2A6F] transition-colors">{product.name}</h3>
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-[#0B2A6F] dark:hover:text-blue-300 dark:text-blue-300 transition-colors">{product.name}</h3>
                   <p className="text-gray-500 dark:text-gray-400 text-sm mb-4 flex-1 line-clamp-2">{product.shortDescription}</p>
                   <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-50 dark:border-slate-800">
                     <span className="font-bold text-lg text-gray-900 dark:text-white">
@@ -144,7 +144,7 @@ export default function HomePage() {
           </div>
           
           <div className="mt-8 md:hidden flex justify-center">
-            <Link href="/products" className="inline-flex items-center gap-2 bg-white dark:bg-slate-900 text-[#0B2A6F] border border-gray-200 dark:border-slate-600 px-6 py-3 rounded-xl font-bold">
+            <Link href="/products" className="inline-flex items-center gap-2 bg-white dark:bg-slate-900 text-[#0B2A6F] dark:text-blue-300 border border-gray-200 dark:border-slate-600 px-6 py-3 rounded-xl font-bold">
               View full catalogue
             </Link>
           </div>
@@ -158,7 +158,7 @@ export default function HomePage() {
             
             {/* Categories */}
             <div>
-              <h2 className="text-3xl font-black text-[#0B2A6F] mb-8">Shop by Category</h2>
+              <h2 className="text-3xl font-black text-[#0B2A6F] dark:text-blue-300 mb-8">Shop by Category</h2>
               <div className="flex flex-wrap gap-3">
                 {categories.map(cat => (
                   <Link 
@@ -182,7 +182,7 @@ export default function HomePage() {
             
             {/* Who We Serve */}
             <div>
-              <h2 className="text-3xl font-black text-[#0B2A6F] mb-8">Who We Serve</h2>
+              <h2 className="text-3xl font-black text-[#0B2A6F] dark:text-blue-300 mb-8">Who We Serve</h2>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                 {whoWeServe.map((item, i) => (
                   <div key={i} className="flex flex-col items-center text-center gap-3 p-6 bg-[#0B2A6F] rounded-2xl hover:bg-[#071c4d] transition-colors group">

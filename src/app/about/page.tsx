@@ -26,10 +26,10 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 md:px-6 max-w-5xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="bg-white dark:bg-slate-900 p-8 md:p-12 rounded-3xl shadow-sm border border-gray-100 dark:border-slate-700">
-              <div className="w-16 h-16 bg-[#0B2A6F]/10 rounded-2xl flex items-center justify-center mb-6 text-[#0B2A6F]">
+              <div className="w-16 h-16 bg-[#0B2A6F]/10 dark:bg-blue-400/20 rounded-2xl flex items-center justify-center mb-6 text-[#0B2A6F] dark:text-blue-300">
                 <Target className="w-8 h-8" />
               </div>
-              <h2 className="text-2xl font-black text-[#0B2A6F] mb-4">Our Vision</h2>
+              <h2 className="text-2xl font-black text-[#0B2A6F] dark:text-blue-300 mb-4">Our Vision</h2>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
                 To become a leading cleaning and hygiene brand recognized for quality, innovation, and customer satisfaction across the nation.
               </p>
@@ -39,7 +39,7 @@ export default function AboutPage() {
               <div className="w-16 h-16 bg-[#1E8E3E]/10 rounded-2xl flex items-center justify-center mb-6 text-[#1E8E3E]">
                 <Heart className="w-8 h-8" />
               </div>
-              <h2 className="text-2xl font-black text-[#0B2A6F] mb-4">Our Mission</h2>
+              <h2 className="text-2xl font-black text-[#0B2A6F] dark:text-blue-300 mb-4">Our Mission</h2>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
                 To provide effective cleaning solutions that help create cleaner homes, healthier workplaces, and safer environments for everyone.
               </p>
@@ -51,7 +51,7 @@ export default function AboutPage() {
       {/* Story / Values */}
       <section className="py-20">
         <div className="container mx-auto px-4 md:px-6 max-w-3xl">
-          <h2 className="text-3xl md:text-4xl font-black text-[#0B2A6F] mb-8 text-center">The HECTO Standard</h2>
+          <h2 className="text-3xl md:text-4xl font-black text-[#0B2A6F] dark:text-blue-300 mb-8 text-center">The HECTO Standard</h2>
           
           <div className="space-y-12">
             <div className="flex gap-6 items-start">

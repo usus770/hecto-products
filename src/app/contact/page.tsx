@@ -12,7 +12,7 @@ export default function ContactPage() {
     <div className="bg-gray-50 dark:bg-slate-800 min-h-[calc(100vh-84px)] py-12 lg:py-20">
       <div className="container mx-auto px-4 md:px-6 max-w-5xl">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-black text-[#0B2A6F] mb-4">Contact Us</h1>
+          <h1 className="text-4xl md:text-5xl font-black text-[#0B2A6F] dark:text-blue-300 mb-4">Contact Us</h1>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             Have a question or want to place a bulk order? Reach out to us through any of the channels below.
           </p>
@@ -41,7 +41,7 @@ export default function ContactPage() {
 
           {/* Phone Card */}
           <div className="bg-white dark:bg-slate-900 p-8 rounded-3xl shadow-sm border border-gray-100 dark:border-slate-700 flex flex-col items-center text-center hover:shadow-md transition-shadow">
-            <div className="w-16 h-16 bg-[#0B2A6F]/10 text-[#0B2A6F] rounded-full flex items-center justify-center mb-6">
+            <div className="w-16 h-16 bg-[#0B2A6F]/10 dark:bg-blue-400/20 text-[#0B2A6F] dark:text-blue-300 rounded-full flex items-center justify-center mb-6">
               <Phone className="w-8 h-8" />
             </div>
             <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Call Us</h2>
@@ -50,7 +50,7 @@ export default function ContactPage() {
             </p>
             <a 
               href={`tel:+91${siteConfig.whatsappNumber.slice(2)}`}
-              className="w-full bg-gray-50 dark:bg-slate-800 hover:bg-gray-100 text-[#0B2A6F] border border-gray-200 dark:border-slate-600 py-3 rounded-xl font-bold transition-colors"
+              className="w-full bg-gray-50 dark:bg-slate-800 hover:bg-gray-100 text-[#0B2A6F] dark:text-blue-300 border border-gray-200 dark:border-slate-600 py-3 rounded-xl font-bold transition-colors"
             >
               +91 {siteConfig.whatsappNumber.slice(2)}
             </a>

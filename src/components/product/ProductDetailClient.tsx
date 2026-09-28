@@ -59,7 +59,7 @@ export default function ProductDetailClient({ product }: { product: Product }) {
               {product.category}
             </Link>
             {product.badges?.map(badge => (
-              <span key={badge} className="text-xs font-bold text-[#0B2A6F] uppercase tracking-wider bg-[#0B2A6F]/10 px-3 py-1 rounded-full flex items-center gap-1">
+              <span key={badge} className="text-xs font-bold text-[#0B2A6F] dark:text-blue-300 uppercase tracking-wider bg-[#0B2A6F]/10 dark:bg-blue-400/20 px-3 py-1 rounded-full flex items-center gap-1">
                 <ShieldCheck className="w-3 h-3" /> {badge}
               </span>
             ))}
@@ -73,7 +73,7 @@ export default function ProductDetailClient({ product }: { product: Product }) {
           {/* Pricing */}
           <div className="mb-8">
             <span className="text-sm text-gray-500 dark:text-gray-400 font-medium block mb-1">Price</span>
-            <div className="text-4xl font-black text-[#0B2A6F]">
+            <div className="text-4xl font-black text-[#0B2A6F] dark:text-blue-300">
               {selectedSize.mrp ? `₹${selectedSize.mrp}` : 'On request'}
             </div>
             {selectedSize.mrp !== null && <div className="text-sm text-gray-500 dark:text-gray-400 mt-1">Inclusive of all taxes</div>}
@@ -178,7 +178,7 @@ export default function ProductDetailClient({ product }: { product: Product }) {
       
       {/* Features Section */}
       <div className="bg-gray-50 dark:bg-slate-800 border-t border-gray-100 dark:border-slate-700 p-8 md:p-12 lg:p-16">
-        <h2 className="text-2xl font-black text-[#0B2A6F] mb-6">Key Features</h2>
+        <h2 className="text-2xl font-black text-[#0B2A6F] dark:text-blue-300 mb-6">Key Features</h2>
         <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {product.features.map((feature, idx) => (
             <li key={idx} className="flex items-start gap-3">

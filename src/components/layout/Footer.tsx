@@ -12,7 +12,7 @@ export default function Footer() {
           {/* Brand Info */}
           <div className="space-y-4">
             <Link href="/" className="inline-block">
-              <span className="text-2xl font-black tracking-tight text-[#0B2A6F]">
+              <span className="text-2xl font-black tracking-tight text-[#0B2A6F] dark:text-white">
                 HECTO<span className="text-[#1E8E3E]">.</span>
               </span>
             </Link>
@@ -20,7 +20,7 @@ export default function Footer() {
               {siteConfig.description}
             </p>
             <div className="pt-2">
-              <p className="text-sm font-semibold text-[#0B2A6F] mb-2">Catalogue 2026–2027</p>
+              <p className="text-sm font-semibold text-[#0B2A6F] dark:text-blue-300 mb-2">Catalogue 2026–2027</p>
             </div>
           </div>
 
@@ -56,7 +56,7 @@ export default function Footer() {
                 </li>
               ))}
               <li>
-                <Link href="/products" className="text-sm font-medium text-[#0B2A6F] hover:text-[#1E8E3E] transition-colors">
+                <Link href="/products" className="text-sm font-medium text-[#0B2A6F] dark:text-blue-300 hover:text-[#1E8E3E] transition-colors">
                   View all &rarr;
                 </Link>
               </li>

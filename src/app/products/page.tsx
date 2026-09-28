@@ -18,7 +18,7 @@ export default function ProductsPage() {
         
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-black text-[#0B2A6F] mb-4">Our Products</h1>
+          <h1 className="text-4xl md:text-5xl font-black text-[#0B2A6F] dark:text-blue-300 mb-4">Our Products</h1>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl">
             Professional-grade cleaning solutions for every need. Filter by category to find the perfect product.
           </p>
